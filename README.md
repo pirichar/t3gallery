@@ -4,6 +4,7 @@
 
 - [x] Make it Deploy (vercel)
 - [x] Scaffold basic ui with mock data - https://uploadthing.com/
+- [] Tidy up build process
 - [] ACtually set up a database (vercel postgres)
 - [] Attach dabase to UI
 - [] Add athentification (w/ clerk)
