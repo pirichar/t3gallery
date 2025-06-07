@@ -9,6 +9,7 @@
 - [x] Attach dabase to UI
 - [x] Add athentification (w/ clerk)
 - [] Add image upload
+- [] "taint" (server-only) 
 - [] Error management (w/ sentry)
 - [] Routing/image page (parallel route)
 - [] Delete button (w/ server actions)
