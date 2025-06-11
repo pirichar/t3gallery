@@ -1,3 +1,5 @@
+//app/page.tsx
+
 import { SignedIn, SignedOut } from "@clerk/nextjs";
 import { db } from "~/server/db";
 

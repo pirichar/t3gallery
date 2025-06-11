@@ -1,3 +1,5 @@
+//app/layout.tsx
+
 import "~/styles/globals.css";
 import {TopNav} from "./_components/topnav";
 
@@ -26,8 +28,8 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-          <TopNav />
         <body className={`font-sans ${geist.variable} flex flex-col gap-4`}>
+          <TopNav />
           {children}
         </body>
       </html>
