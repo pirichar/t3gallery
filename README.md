@@ -9,7 +9,7 @@
 - [x] Attach dabase to UI
 - [x] Add athentification (w/ clerk)
 - [x] Add image upload
-- [ ] "taint" (server-only) 
+- [x] "taint" (server-only) 
 - [ ] Use Next/Image component
 - [ ] Error management (w/ sentry)
 - [ ] Routing/image page (parallel route)
