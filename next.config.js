@@ -18,6 +18,22 @@ const coreConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  async rewrites() {
+    return [
+      {
+        source: "/relay-1EOk/static/:path*",
+        destination: "https://us-assets.i.posthog.com/static/:path*",
+      },
+      {
+        source: "/relay-1EOk/:path*",
+        destination: "https://us.i.posthog.com/:path*",
+      },
+      {
+        source: "/relay-1EOk/flags",
+        destination: "https://us.i.posthog.com/flags",
+      },
+    ];
+  },
 };
 
 import { withSentryConfig } from "@sentry/nextjs";

@@ -13,7 +13,7 @@
 - [x] Use Next/Image component
 - [x] Error management (w/ sentry)
 - [x] Routing/image page (parallel route)
-- [ ] ShadUi Sonner instead of deprecated toast
-- [ ] Delete button (w/ server actions)
+- [x] ShadUi Sonner instead of deprecated toast
 - [ ] Analytics (posthog)
+- [ ] Delete button (w/ server actions)
 - [ ] Ratelimiting (upstash)
