@@ -1,7 +1,7 @@
 //app/layout.tsx
 
 import "~/styles/globals.css";
-import {TopNav} from "./_components/topnav";
+import { TopNav } from "./_components/topnav";
 import { ClerkProvider } from '@clerk/nextjs'
 import { type Metadata } from "next";
 import { Geist } from "next/font/google";
@@ -26,19 +26,23 @@ const geist = Geist({
 export default function RootLayout({
   children,
   modal,
-}: { 
+}: {
   children: React.ReactNode;
   modal: React.ReactNode;
- }) {
+}) {
   return (
     <ClerkProvider>
       <html lang="en">
         <NextSSRPlugin
-        routerConfig={extractRouterConfig(ourFileRouter)}
+          routerConfig={extractRouterConfig(ourFileRouter)}
         />
-        <body className={`font-sans ${geist.variable} flex flex-col gap-4`}>
-          <TopNav />
-          {children}
+        <body className={`font-sans ${geist.variable}`}>
+          <div className="grid h-screen grid-rows-[auto,1fr]">
+            <TopNav />
+            <main className="overflow-y-scroll">
+              {children}
+            </main>
+          </div>
           {modal}
           <div id="modal-root" />
         </body>
